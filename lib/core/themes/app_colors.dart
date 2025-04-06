@@ -9,5 +9,6 @@ class AppColors{
   static Color brown=Colors.brown;
   static Color gray=Colors.grey;
   static Color offWhite=Colors.grey;
+  static Color green=Colors.green;
 
 }
