@@ -67,6 +67,7 @@ flutter:
       - assets/images/
       - assets/images/splach_images/
       - assets/images/images_svg/
+      - assets/Suras/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

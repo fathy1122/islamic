@@ -10,5 +10,6 @@ class AppColors{
   static Color gray=Colors.grey;
   static Color offWhite=Colors.grey;
   static Color green=Colors.green;
+  static Color bg=Color(0xff202020);
 
 }
