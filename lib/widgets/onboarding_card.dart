@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islamic/core/themes/app_colors.dart';
 
+import '../core/routes/app_routes_name.dart';
+
 class OnboardingCard extends StatelessWidget {
  final String image,title,description,buttonText;
    OnboardingCard({super.key,required this.image, required this.title, required this.description, required this.buttonText, required this.onPressed});
@@ -51,7 +53,10 @@ child: Column(
       child: Text(buttonText,style: TextStyle(
         color: AppColors.gold,
       ),),
-    )
+    ),
+    ElevatedButton(onPressed: (){
+      Navigator.pushNamedAndRemoveUntil(context, AppRoutesName.layout,(route) => false,);
+    }, child: Text('Skip')),
   ],
   
 ),
