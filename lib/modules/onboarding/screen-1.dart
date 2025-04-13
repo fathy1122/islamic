@@ -28,8 +28,10 @@ class _ScreenState extends State<Screen> {
     OnboardingCard(image: 'assets/images/Frame 3 (3).png',title: 'Bearish',buttonText: 'Next',description: 'Praise the name of your Lord, the Most High',onPressed: (){
       _pageController.animateToPage(4, duration: Durations.long1, curve: Curves.linear);
     }),
-    OnboardingCard(image: 'assets/images/Frame 3 (4).png',title: 'Holy Quran Radio',buttonText: 'Finnish',description: 'You can listen to the Holy Quran Radio through the application for free and easily',onPressed: (){
-      _pageController.animateToPage(5, duration: Durations.long1, curve: Curves.linear);
+    OnboardingCard(image: 'assets/images/Frame 3 (4).png',title: 'Holy Quran Radio',buttonText: '',description: 'You can listen to the Holy Quran Radio through the application for free and easily',onPressed: (){
+      // _pageController.animateToPage(5, duration: Durations.long1, curve: Curves.linear);
+      // Navigator.pushAndRemoveUntil(context, 'newRoute', (route) => false,);
+      // Navigator.pushNamed(, 'routeName');
     }),
 
   ];
@@ -46,12 +48,14 @@ class _ScreenState extends State<Screen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [
+
             Expanded(
                 child: PageView(
               controller: _pageController,
               children: _onBoardingPages,
 
             )),
+
             SmoothPageIndicator( controller: _pageController, count: _onBoardingPages.length,effect:ExpandingDotsEffect(
 
               activeDotColor: AppColors.gold,
