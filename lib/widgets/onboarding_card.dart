@@ -3,6 +3,8 @@ import 'package:islamic/core/routes/app_routes.dart';
 import 'package:islamic/core/routes/app_routes_name.dart';
 import 'package:islamic/core/themes/app_colors.dart';
 
+import '../core/routes/app_routes_name.dart';
+
 class OnboardingCard extends StatelessWidget {
  final String image,title,description,buttonText;
    OnboardingCard({super.key,required this.image, required this.title, required this.description, required this.buttonText, required this.onPressed});
