@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islamic/core/routes/app_routes.dart';
 import 'package:islamic/core/routes/app_routes_name.dart';
+import 'package:islamic/modules/layout/pages/quran.dart';
 import 'package:islamic/modules/splach_screen/splach_screen.dart';
 
 import 'modules/onboarding/screen-1.dart';
@@ -20,8 +21,8 @@ class MyApp extends StatelessWidget {
       title: 'Islamic',
 debugShowCheckedModeBanner: false,
 routes:AppRoutes.routes ,
-      initialRoute: AppRoutesName.splash,
-      home:SplashScreen(),
+      initialRoute: AppRoutesName.layout,
+      home:Quran(),
     );
   }
 }

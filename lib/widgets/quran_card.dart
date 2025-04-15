@@ -6,12 +6,14 @@ import '../core/themes/app_colors.dart';
 
 class QuranCard extends StatelessWidget {
   final SuraModels suraModels;
-   QuranCard({super.key,required this.suraModels});
+ final Function(SuraModels)onTap;
+   const QuranCard({super.key,required this.suraModels, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        onTap(suraModels);
         Navigator.pushNamed(context, AppRoutesName.quranDetails,arguments: suraModels);
       },
       child: Row(
