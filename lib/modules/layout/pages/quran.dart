@@ -8,6 +8,7 @@ import 'package:islamic/modules/layout/pages/quran_details.dart';
 import 'package:islamic/widgets/most_recently.dart';
 import 'package:islamic/widgets/quran_card.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 // import 'package:shared_preferences/shared_preferences.dart';
 
 class Quran extends StatefulWidget {
